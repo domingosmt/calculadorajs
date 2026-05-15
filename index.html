@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="h-screen bg-gray-950 text-white flex justify-center items-center">
+    <main class="bg-blue-900/30 w-1/3 p-10 rounded-2xl">
+        <h1 class="text-4xl mb-10">Calculadora</h1>
+        <form class="">
+            <input class="w-[45%] p-1.5 rounded-2xl border border-emerald-400 focus:outline focus:outline-cyan-600" id="numero1" type="number"
+                placeholder="Digite um número" required>
+            <select class="py-1.5" name="operador" id="operador">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input class="w-[45%] p-1.5 rounded-2xl border border-emerald-400 focus:outline focus:outline-cyan-600" id="numero2" type="number"
+                placeholder="Digite outro número" required>
+            <div class="flex justify-end">
+                <button type="button" onclick="calcular()" class="bg-cyan-800 py-2 px-9 rounded mt-10 cursor-pointer shadow-2xl">Calcular</button>
+            </div>
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
